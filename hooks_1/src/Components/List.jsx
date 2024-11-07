@@ -3,7 +3,7 @@ const List=({people})=>{
     return (
     <section>
         {people.map((person)=>{
-            return <Person person={person}/>
+            return <Person person={person} key={person.id}/>
         })}
             </section>)
 }
