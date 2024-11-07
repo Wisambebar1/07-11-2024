@@ -1,8 +1,8 @@
-const Person=(image,name,age)=>{
+const Person=(props)=>{
     return (<article className="person">
-        <img src={image} alt={name} className="img"></img>
+        <img src={props.person.image} alt={props.person.name} className="img"></img>
         <div>
-            <h4>{name}</h4>
+            <h4>{props.person.name}</h4>
         </div>
     </article>)
 }
